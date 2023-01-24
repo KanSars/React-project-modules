@@ -1,0 +1,38 @@
+@import "./src/common/styles/color";
+
+.chartheader {
+    height: 118px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .container {
+        height: 78px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+        justify-content: space-between;
+
+        margin: 20px 20px;
+
+        &-title {
+            display: flex;
+            flex-flow: column;
+
+            .head-text {
+                font-family: 'Rubik-Bold', sans-serif;
+            }
+
+            .main-text {
+                font-family: 'Rubik-Regular', sans-serif;
+            }
+        }
+    }
+}
+
+.theme-dark {
+    .container-title {
+        color: $white;
+    }
+}

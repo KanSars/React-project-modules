@@ -1,0 +1,109 @@
+@import "../../common/styles/color";
+
+@mixin secondary {
+    border: 2px solid;
+    box-sizing: border-box;
+    background: $white;
+}
+
+@mixin primary {
+    border: 2px solid;
+    box-sizing: border-box;
+    color: $white;
+}
+
+.btn {
+    height: min-content;
+    width: min-content;
+    border-radius: 15px;
+    padding: 10px 42px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pink-primary {
+    @include primary();
+    background: $pink;
+}
+
+.green-primary {
+    @include primary();
+    background: $blue-green;
+}
+
+.purple-primary {
+    @include primary();
+    background: $purple;
+}
+
+.pink-secondary {
+    @include secondary();
+    color: $pink;
+    border-color: $pink;
+}
+
+.green-secondary {
+    @include secondary();
+    color: $blue-green;
+    border-color: $blue-green;
+}
+
+.purple-secondary {
+    @include secondary();
+    color: $purple;
+    border-color: $purple;
+}
+
+.pink-hover {
+    @include primary();
+    background: $pinkHover;
+}
+
+.green-hover {
+    @include primary();
+    background: $greenHover;
+}
+
+.purple-hover {
+    @include primary();
+    background: $purpleHover;
+}
+
+.pink-onclick {
+    @include primary();
+    background: $purpureus
+}
+
+.green-onclick {
+    @include primary();
+    background: $blueMunsell
+}
+
+.purple-onclick {
+    @include primary();
+    background: $purpleX11
+}
+
+.red-error {
+    @include primary();
+    background: $red;
+}
+
+.gray-disabled {
+    @include primary();
+    background: $gainsboro;
+    cursor: default;
+}
+
+.theme-dark {
+    .pink-primary {
+        border: 2px solid $pink;
+        color: $eerieBlack;
+    }
+
+    .pink-secondary {
+        background: none;
+    }
+}
+
+
