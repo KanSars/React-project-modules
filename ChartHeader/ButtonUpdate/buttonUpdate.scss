@@ -1,0 +1,28 @@
+@import "./src/common/styles/color";
+
+.button-update {
+    background: #F5F5F5;
+    height: 40px;
+    border-radius: 15px;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &-container {
+        width: 91px;
+        height: 24px;
+
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.theme-dark {
+    .button-update {
+        background: $gray;
+        color: $cultured;
+    }
+}

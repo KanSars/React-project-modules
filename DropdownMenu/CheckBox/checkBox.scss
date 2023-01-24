@@ -1,0 +1,32 @@
+.check {
+    width: 163px;
+    height: 35px;
+
+    flex-grow: 0;
+    margin: 0 0;
+    padding-left: 37px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    .input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; 
+    }
+
+    .checkbox {
+        position: absolute;
+        margin-left: -23px;
+        width: 17px;
+        height: 17px;
+        background-image: url(../../../common/assets/icons/selectOff.svg);
+    }
+
+    .input:checked + .checkbox {
+        background-image: url(../../../common/assets/icons/selectOn.svg);
+    }
+}
